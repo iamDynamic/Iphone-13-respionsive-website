@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: transparent;
+    display: flex;
+    padding: 20px;
+    color: #262626;
+}
+header h1{
+    margin-left: 40px;
+}
+header .a {
+    margin-top: 20px;
+    margin-left: 600px;
+}
+header .a a{
+    text-transform: capitalize;
+    color: #262626;
+    text-decoration: none;
+    margin-left: 20px;
+}
+header .a a:hover{
+    text-decoration: underline;
+}
+article{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 400px;
+    text-transform: capitalize;
+}
+article .iphoneimg img{
+    margin-top: -40px;
+    width: 300px;
+}
+article aside{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+article {
+    font-size: 30px;
+}
+article aside .colors{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+article aside .colors #red,
+article aside .colors #black,
+article aside .colors #cyan,
+article aside .colors #gold,
+article aside .colors #white{
+    margin-left: 20px;
+    cursor: pointer;
+}
+article aside .colors #red{
+    background-color: #d00000;
+    border: solid #262626;
+    color: #fff;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+}
+article aside .colors #cyan{
+    background-color: #00ffff;
+    border: solid #262626;
+    color: #fff;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+}
+article aside .colors #gold{
+    background-color: gold;
+    border: solid #262626;
+    color: #fff;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+}
+article aside .colors #black{
+    background-color: #262626;
+    border: solid #262626;
+    color: #fff;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+}
+article aside .colors #white{
+    background-color: #ddd5d5;
+    border: solid #262626;
+    color: #fff;
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+}
+article aside .Gbbtn{
+    display: flex;
+
+}
+article aside .Gbbtn #one,
+article aside .Gbbtn #two,
+article aside .Gbbtn #three,
+article aside .buy button{
+    background-color: #262626;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    text-align: center;
+}
+article aside #price,
+article aside .Gbbtn,
+article aside .colors{
+    margin-top: 20px;
+}
+.accesories{
+    display: none;
+}
+article aside .buy button{
+    width: 100px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+hr{
+    display: none;
+}
+/* media {to make website responsive} */
+@media (max-width:1190px) {
+    article{
+        margin-left: -1px;
+        margin-left: 200px;
+    }
+}
+@media (max-width:1015px) {
+    article{
+        margin-left: -1px;
+        margin-left: 100px;
+    }
+.ipad,
+.monitors,
+.mac,
+.watch,
+.vision-pro,
+.support,
+.services{
+    display: none;
+}
+.accesories{
+    display:inline;
+}
+header .a{
+    margin-left: -1px;
+    margin-left:400px;
+}
+}
+@media (max-width:837px) {
+    .iphoneimg #phoneimgsrc{
+        width: 200px;
+    }
+    .iphoneimg{
+        margin-top: 70px;
+    }
+}
+@media (max-width:739px) {
+    article{
+        margin-top: -3px;
+        display: grid;
+    }
+    #iphoneimg #phoneimgsrcg{
+        width: 2px;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    aside .Gbbtn div {
+        width: fit-content;
+    }
+    .a{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        display: block;
+    }
+}
+@media (max-width:526px) {
+    article{
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       margin-left: -1px;
+    }
+}
